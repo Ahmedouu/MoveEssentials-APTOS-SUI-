@@ -1,6 +1,5 @@
-        // background over-network quest in overmind, to get the global timeline I preferd to use some slicing method with trim, 
-
-        //I am looking for it to return a vector of vectors, each sub vector having a length of size if possible if not less than size the vector needs to be indexed since they represent a global timeline, and the index will be the page we are looking for 
+      // vector slicing in move
+     //I am looking for it to return a an indexed vector of vectors, at each index the vector will have a length of "size" if possible if not less than size the vector needs to be indexed since they represent a global timeline, and the index will be the page we are looking for 
         
 
         let test_vector = vector::empty<vector<bool>>();
