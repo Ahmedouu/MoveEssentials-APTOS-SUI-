@@ -25,3 +25,18 @@
             k = k + 1;
 
         };
+      let return_vector = vector::borrow(&test_vector, page_index)
+
+//we can also do this, suppose truth vec is now repersented by originalVec, what is cool here is that we don't need to create a vector of vectors but instead push the values of originalVec to another vector of the same type,
+//Still need to see if there is a way to do this in place without creating any extra vector in move, but this will use page_index and page_size directly to push only the desired elements to our return vector, originalVec will be passed as input 
+       
+ let return_vector = vector::empty<T>();
+        let start = (page_index * page_size);
+        let end = (page_index + 1) * page_size - 1;
+        let i = start;
+        while (i <= end){
+            if (i < vector::length(&originalVec)){
+            let temp = vector::borrow(&originalVec, i);
+            vector::push_back(&mut return_vector, *temp);};
+            i = i + 1;
+        };
