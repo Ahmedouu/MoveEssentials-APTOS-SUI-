@@ -47,6 +47,7 @@
 // in the context of what I am using this for is what I receiving a stream of elements, I created a placeholder (originalVec) add the elements to originalVec and then reverse and index based on the input size, this is not very efficient since 
 // in total we will have used three loops by the end (the reverse function being the third loop), this can be done only using one loop !!
 
+let originalVec = vector::empty<T>();
 let mut i = vector::length(&input_vector);
  while (i > 0) {
     i -= 1; // Decrement i before using it as an index
