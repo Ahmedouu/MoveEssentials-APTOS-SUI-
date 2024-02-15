@@ -59,7 +59,7 @@ let mut i = vector::length(&input_vector);
     let collectionIndex = (vector::length(&input_vector) - 1 - i) / page_size;
 
     if (collectionIndex == page_index) {
-        vector::push_back(&mut followings, *metadata);
+        vector::push_back(&mut originalVec, *element_to_be_added);
     }
 }
 
