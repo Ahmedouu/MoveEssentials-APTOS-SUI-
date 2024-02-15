@@ -42,3 +42,26 @@
             vector::push_back(&mut return_vector, *temp);};
             i = i + 1;
         };
+
+//But what if I don't want two copies of the vector, instead of creating another vector and indexing how can I modify the original vector in place ensuring the elements in the vector are indexed, reversed and of correct size:
+// in the context of what I am using this for is what I receiving a stream of elements, I created a placeholder (originalVec) add the elements to originalVec and then reverse and index based on the input size, this is not very efficient since 
+// in total we will have used three loops by the end (the reverse function being the third loop), this can be done only using one loop !!
+
+let mut i = vector::length(&input_vector);
+ while (i > 0) {
+    i -= 1; // Decrement i before using it as an index
+
+    let element_to_index = vector::borrow(&input_vector, i);
+    let element_address = *table::borrow(&state.account_registry.accounts, *username);
+    let element_to_be_added = borrow_global::<T>(element_address);
+
+    // Calculate the collection index based on size and length of input vector
+    let collectionIndex = (vector::length(&input_vector) - 1 - i) / page_size;
+
+    if (collectionIndex == page_index) {
+        vector::push_back(&mut followings, *metadata);
+    }
+}
+
+
+
