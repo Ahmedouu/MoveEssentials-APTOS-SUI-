@@ -2,7 +2,7 @@
 not sure what to call this now , let start by some implementing some slicing 
 
 
-Some notes about SUI and APTOS:
+*** Some notes about SUI and APTOS:***
 
 sui borrow checker is funny just like in aptos.
 
