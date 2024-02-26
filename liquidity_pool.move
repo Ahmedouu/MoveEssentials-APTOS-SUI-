@@ -1,8 +1,4 @@
 /* 
-    This quest features a AMM (Automated Market Maker) liquidity pool. This module provides the 
-    base functionality of an AMM that can be used to create a decentralized exchange on the Aptos 
-    blockchain.
-
     AMM:
         An AMM (Automated Market Maker) is a decentralized exchange that uses a mathematical formula
         to price assets against each other. Liquidity providers deposit two assets into a liquidity
