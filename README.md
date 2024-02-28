@@ -1,5 +1,4 @@
-not sure what to call this now , let start by some implementing some slicing 
-
+Some contracts, scripts in move. (aptos and sui)
 
 *** Some notes about SUI and APTOS:***
 
